@@ -3,8 +3,9 @@ package org.service;
 import org.poc.PayloadObject;
 import org.poc.ResponseObject;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component("defaultProcessor")
+@Service("defaultProcessor")
 public class DefaultService implements MessageProcessor {
 
     @Override
