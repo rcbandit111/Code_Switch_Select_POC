@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerA
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
-@SpringBootApplication(scanBasePackages = { "org.poc.*"})
+@SpringBootApplication(scanBasePackages = { "org.poc", "org.service"})
 public class PocApplication {
 
     public static void main(final String[] args)
